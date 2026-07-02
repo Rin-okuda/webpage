@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>LP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:#fff;font-family:'Inter','Noto Sans JP',sans-serif;}
+    .lp{display:flex;flex-direction:column;gap:64px;align-items:center;padding:48px 24px;}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:10px;width:100%;}
+    .nav-logo{font-weight:400;font-size:20px;color:#000;}
+    .btn-dark{background:#2c2c2c;border:1px solid #2c2c2c;border-radius:8px;padding:12px;font-size:16px;color:#f5f5f5;cursor:pointer;}
+    .btn-light{background:#e3e3e3;border:1px solid #767676;border-radius:8px;padding:12px;font-size:16px;color:#1e1e1e;cursor:pointer;}
+    .hero-inner{display:flex;flex-direction:column;gap:24px;padding:10px;}
+    .hero-title{font-weight:700;font-size:48px;line-height:1.2;color:#000;letter-spacing:-0.96px;}
+    .hero-sub{font-size:20px;color:#000;}
+    .actions{display:flex;gap:12px;}
+    .features{background:#f5f5f5;border-radius:16px;width:100%;}
+    .features-inner{display:flex;flex-direction:column;gap:24px;padding:32px;}
+    .features-title{font-weight:600;font-size:24px;color:#000;letter-spacing:-0.48px;}
+    .cards{display:flex;flex-wrap:wrap;gap:24px;}
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;width:280px;display:flex;flex-direction:column;}
+    .card-thumb{height:160px;}
+    .card-body{display:flex;flex-direction:column;padding:24px;flex:1;}
+    .card-title{font-family:'Noto Sans JP',sans-serif;font-weight:700;font-size:20px;color:#000;}
+    .card-desc{font-family:'Noto Sans JP',sans-serif;font-size:14px;color:#6b7280;line-height:1.6;margin-top:12px;flex:1;}
+    .card-price{font-family:'Noto Sans JP',sans-serif;font-weight:700;font-size:20px;color:#e11d4b;margin-top:24px;margin-bottom:16px;}
+    .btn-buy-wrap{position:relative;height:33.25px;width:232px;}
+    .btn-buy-bg{position:absolute;left:-10px;top:-10px;height:78px;display:flex;align-items:center;justify-content:center;padding:16px;}
+    .btn-buy-bg-inner{height:46px;border-radius:12px;width:109.935px;}
+    .bg-blue{background:#2563ed;}.bg-gray{background:#e5e7eb;}
+    .btn-buy-label{position:absolute;left:29px;top:8px;padding:16px 10px;font-size:12px;}
+    .cta{background:#2c2c2c;border-radius:16px;width:100%;}
+    .cta-inner{display:flex;flex-direction:column;gap:24px;align-items:center;padding:48px 24px;}
+    .cta-title{font-weight:600;font-size:24px;color:#f5f5f5;letter-spacing:-0.48px;}
+    .footer{display:flex;align-items:center;justify-content:center;padding:10px;}
+    .footer p{font-size:14px;color:#000;line-height:1.4;}
+  </style>
+</head>
+<body><div class="lp">
+  <div style="width:100%"><div class="nav-inner"><p class="nav-logo">ロゴ</p><button class="btn-dark">Button</button></div></div>
+  <div style="width:100%"><div class="hero-inner"><p class="hero-title">大見出し</p><p class="hero-sub">一言</p><div class="actions"><button class="btn-dark">Button</button><button class="btn-light">Button</button></div></div></div>
+  <div class="features"><div class="features-inner"><p class="features-title">見出し</p><div class="cards">
+    <div class="card"><div class="card-thumb" style="background-image:linear-gradient(135deg, rgba(255,0,251,0.3) 0%, rgba(255,150,230,0.4) 100%), linear-gradient(90deg, rgb(217,217,217) 0%, rgb(217,217,217) 100%);"></div><div class="card-body"><p class="card-title">星のカービィ</p><p class="card-desc">個性豊かなライダーとマシンを組み合わせて競うライドアクションゲーム。</p><p class="card-price">6,198円</p><div class="btn-buy-wrap"><div class="btn-buy-bg"><div class="btn-buy-bg-inner bg-blue"></div></div><p class="btn-buy-label" style="color:#fcfdff;">購入する</p></div></div></div><div class="card"><div class="card-thumb" style="background-image:linear-gradient(135deg, rgba(0,111,255,0.3) 0%, rgba(100,180,255,0.4) 100%), linear-gradient(90deg, rgb(217,217,217) 0%, rgb(217,217,217) 100%);"></div><div class="card-body"><p class="card-title">マリオギャラクシー</p><p class="card-desc">星から星へと宇宙を旅をするマリオ。星の力で銀河を攻略していく物語である。</p><p class="card-price">7,980円</p><div class="btn-buy-wrap"><div class="btn-buy-bg"><div class="btn-buy-bg-inner bg-gray"></div></div><p class="btn-buy-label" style="color:#6b7280;">品切れ</p></div></div></div><div class="card"><div class="card-thumb" style="background-image:linear-gradient(135deg, rgba(12,255,80,0.3) 0%, rgba(100,255,150,0.4) 100%), linear-gradient(90deg, rgb(217,217,217) 0%, rgb(217,217,217) 100%);"></div><div class="card-body"><p class="card-title">ポケモンスカーレット</p><p class="card-desc">野生のポケモンを捕まえたり、ポケモントレーナーとの白熱バトをするなど遊び方無限大のゲーム。</p><p class="card-price">4,880円</p><div class="btn-buy-wrap"><div class="btn-buy-bg"><div class="btn-buy-bg-inner bg-blue"></div></div><p class="btn-buy-label" style="color:#fcfdff;">購入する</p></div></div></div>
+  </div></div></div>
+  <div class="cta"><div class="cta-inner"><p class="cta-title">見出し</p><button class="btn-light">Button</button></div></div>
+  <div class="footer"><p>デザイン土台：Figma's Simple Design System UI Kit is licensed by Figma under CC BY 4.0.</p></div>
+</div></body></html>
